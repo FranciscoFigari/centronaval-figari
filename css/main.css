@@ -36,7 +36,13 @@ nav ul li{
     background-color: #e3e2df;
     padding: 5px;
     display: inline-block;
+    transition: all 0.5s ease-out;
 }    
+
+nav ul li:hover,
+nav ul li:focus{
+    background-color: #2D4263;
+}
 
 
 h1{
