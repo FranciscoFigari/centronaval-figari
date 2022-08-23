@@ -87,7 +87,6 @@ h1{
 
 .footer{
     background-color: #f4f7f6;
-    margin: 10px;
     border: 3px solid black;
     margin-top: 500px;
     overflow: hidden;
@@ -126,19 +125,28 @@ main h2{
 
 .rutinas{
     top: 50px;
-    text-decoration: underline;
+    
     margin: 25px;
     
           
 }
 
-.rutina-1{
-    text-align: left;
+
+.rutina-1 h4{
+    text-decoration: underline;
     
 }
 
-.rutina-2{
-    text-align: right;
+.rutina-1 p{
+    font-weight: bold;
+}
+
+.rutina-2 h4{
+    text-decoration: underline;
+}
+
+.rutina-2 p{
+    font-weight: bold;
 }
 
 #fin-de-pagina{
