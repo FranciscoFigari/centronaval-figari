@@ -1,0 +1,79 @@
+@import "utilities/variables";
+
+header{
+    background-color: $color-fondo-header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        text-align: center;
+    }
+    nav{
+        ul{
+            list-style: none;
+            li{
+                background-color: $color-fondo-menu;
+                padding: 5px;
+                display: inline-block;
+                transition: all 0.5s ease-out;
+                :hover,
+                :focus{
+                    background-color: $color-hover-menu;
+                }
+            }
+        }
+    }
+}
+
+.main-index{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+        "ultimo-partido fixture-proxima "
+           
+    ;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+    margin-top: 100px;
+    .ultimo-partido{
+        grid-area: ultimo-partido;
+        text-decoration: underline;
+        font-size: x-large;
+    }
+    .fixture-proxima{
+        grid-area: fixture-proxima;
+    font-size: x-large;
+    text-decoration: underline;
+    }
+
+}
+
+.footer{
+    background-color: #f4f7f6;
+    border: 3px solid black;
+    margin-top: 500px;
+    overflow: hidden;
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .caja-direccion{
+            text-align: right;
+        }
+        h3{
+            color: $color-titulos;
+            text-decoration: underline;
+        }
+        h4{
+            color: $color-titulos;
+            text-decoration: underline;
+        }
+    } 
+
+}
