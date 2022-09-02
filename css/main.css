@@ -1,3 +1,9 @@
+.footer footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
 header {
   background-color: #f4f7f6;
   display: flex;
@@ -5,10 +11,12 @@ header {
   justify-content: center;
   align-items: center; }
   header h1 {
-    text-align: center; }
+    text-align: center;
+    font-weight: 700; }
   header nav ul {
     list-style: none; }
     header nav ul li {
+      font-weight: 500;
       background-color: #e3e2df;
       padding: 5px;
       display: inline-block;
@@ -41,16 +49,13 @@ header {
   border: 3px solid black;
   margin-top: 500px;
   overflow: hidden; }
-  .footer footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .footer footer .caja-direccion {
-      text-align: right; }
-    .footer footer h3 {
-      color: black;
-      text-decoration: underline; }
-    .footer footer h4 {
-      color: black;
-      text-decoration: underline; }
+  .footer footer .caja-direccion {
+    text-align: right; }
+  .footer footer h3 {
+    color: black;
+    text-decoration: underline;
+    font-weight: 700; }
+  .footer footer h4 {
+    color: black;
+    text-decoration: underline;
+    font-weight: 700; }

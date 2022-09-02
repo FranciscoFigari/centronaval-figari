@@ -1,5 +1,9 @@
 @import "utilities/variables";
 
+@import "base/mapas";
+@import "base/mixin";
+@import "base/extend";
+
 header{
     background-color: $color-fondo-header;
     display: flex;
@@ -8,11 +12,13 @@ header{
     align-items: center;
     h1{
         text-align: center;
+        font-weight: map-get($map: $weight-fuentes , $key: titulos );
     }
     nav{
         ul{
             list-style: none;
             li{
+                font-weight: map-get($map: $weight-fuentes , $key: texto-menu );
                 background-color: $color-fondo-menu;
                 padding: 5px;
                 display: inline-block;
@@ -27,19 +33,7 @@ header{
 }
 
 .main-index{
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr;
-    grid-template-rows: 1fr;
-
-    grid-template-areas: 
-        "ultimo-partido fixture-proxima "
-           
-    ;
-    justify-content: center;
-    justify-items: center;
-    align-items: start;
-    margin-top: 100px;
+    @include grid-main-index;
     .ultimo-partido{
         grid-area: ultimo-partido;
         text-decoration: underline;
@@ -59,20 +53,19 @@ header{
     margin-top: 500px;
     overflow: hidden;
     footer{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        @extend %flex-footer;
         .caja-direccion{
             text-align: right;
         }
         h3{
             color: $color-titulos;
             text-decoration: underline;
+            font-weight: map-get($map: $weight-fuentes , $key: titulos );
         }
         h4{
             color: $color-titulos;
             text-decoration: underline;
+            font-weight: map-get($map: $weight-fuentes , $key: titulos );
         }
     } 
 
