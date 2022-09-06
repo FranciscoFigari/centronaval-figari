@@ -1,3 +1,10 @@
+%flex-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 %flex-footer {
     display: flex;
     flex-direction: row-reverse;

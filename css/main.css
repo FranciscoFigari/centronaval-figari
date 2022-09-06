@@ -1,3 +1,9 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .footer footer {
   display: flex;
   flex-direction: row-reverse;
@@ -5,11 +11,7 @@
   flex-wrap: wrap; }
 
 header {
-  background-color: #f4f7f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-color: #f4f7f6; }
   header h1 {
     text-align: center;
     font-weight: 700; }
@@ -43,8 +45,12 @@ header {
     grid-area: fixture-proxima;
     font-size: x-large;
     text-decoration: underline; }
+    .main-index .fixture-proxima .imagen-fecha {
+      max-width: 100%; }
 
 .footer {
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: #f4f7f6;
   border: 3px solid black;
   margin-top: 500px;
@@ -59,3 +65,83 @@ header {
     color: black;
     text-decoration: underline;
     font-weight: 700; }
+
+.container-fluid h2 {
+  text-decoration: underline; }
+
+.rutinas {
+  top: 50px;
+  margin: 25px; }
+  .rutinas .rutina-1 h4, .rutinas .rutina-2 h4 {
+    text-decoration: underline; }
+  .rutinas .rutina-1 p, .rutinas .rutina-2 p {
+    font-weight: bold; }
+
+.main-partidos {
+  margin: 10px;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "titulo-partidos titulo-partidos" "parrafo-partidos parrafo-partidos" "videos-partidos videos-partidos"; }
+  .main-partidos h2 {
+    grid-area: titulo-partidos;
+    color: black;
+    text-decoration: underline;
+    font-weight: 700; }
+  .main-partidos p {
+    grid-area: parrafo-partidos; }
+  .main-partidos ol {
+    grid-area: videos-partidos; }
+  .main-partidos .partidos {
+    margin: 10px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-partidos .partidos .partido-1, .main-partidos .partidos .partido-2 {
+      padding: 50px; }
+
+.lista-links {
+  list-style: circle black;
+  margin: 30px; }
+
+main section ul {
+  list-style: none; }
+
+main section .info-contacto {
+  border: 3px solid black;
+  margin: 50px;
+  padding: 10px; }
+
+main .formulario {
+  border: 3px solid black;
+  margin: 50px;
+  padding: 10px; }
+
+/* mediaqueries */
+@media screen and (min-width: 375px) and (max-width: 799px) {
+  header h1 {
+    font-size: 1rem; }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; }
+  .main-index {
+    display: flex;
+    flex-direction: column; }
+  div section iframe {
+    width: 100%; }
+  .partidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  main ol div iframe {
+    width: 100%; }
+  .container {
+    width: auto; } }

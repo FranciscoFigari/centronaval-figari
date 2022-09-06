@@ -16,3 +16,18 @@
     margin-top: 100px;
     
 }
+
+@mixin grid-main-partidos{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    
+
+    grid-template-areas: 
+        "titulo-partidos titulo-partidos"
+        "parrafo-partidos parrafo-partidos"
+        "videos-partidos videos-partidos"
+    
+    ;
+}
